@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0px;
+        }
+
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            background: url("bag.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        #im {
+            height: 100%;
+            width: 100%;
+        }
+
+        .left {
+            /* border: 2px solid rgb(159, 14, 14); */
+            display: inline-block;
+            position: absolute;
+            top: 5%;
+            left: 2.5%;
+            width: 13%;
+        }
+
+        .left img {
+            width: 35px;
+            height: 37px;
+            filter: invert(100%);
+
+
+        }
+
+        .left a {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            margin-top: 6px;
+            margin-left: 6px;
+            color: #d2b571;
+            text-shadow: 4px 5px 3px black;
+
+        }
+
+
+
+        .mid {
+            /* border: 2px solid rgb(74, 38, 172); */
+            position: absolute;
+            top: 3.5%;
+            width: 42%;
+            align-items: center;
+            justify-content: center;
+            display: block;
+            margin-left: 28%;
+
+        }
+
+
+        .right {
+            /* border: 2px solid rgb(26, 76, 122); */
+            display: inline-block;
+            position: absolute;
+            top: 5%;
+            right: 3%;
+
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 148%;
+
+        }
+
+        .navbar li a {
+
+            text-decoration: none;
+            color: white;
+            padding: 8px 14px;
+            text-shadow: 5px 4px 6px black;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+
+            color: #755342;
+            text-decoration: underline;
+
+
+        }
+
+        .btn {
+            margin: 1px 4px;
+            background-color: wheat;
+            padding: 3px 9px;
+            border-radius: 23px;
+            cursor: pointer;
+            border: 2px solid rgb(198, 80, 80);
+            font-size: 12px;
+        }
+
+        .btn:hover {
+            color: #e54e10;
+            background-color: #b6a7a7;
+        }
+
+        .container {
+            margin: 108px 60px;
+            padding: 5px 37px;
+            border: 4px solid #9b7bd5;
+            border-radius: 30px;
+            width: 30%;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            border: 2px solid black;
+            width: 77%;
+            border-radius: 11px;
+            font-size: 20px;
+            padding: 1px;
+            margin: 5px auto;
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: #e1d0da;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 170%;
+            color: #f4d78e;
+            text-shadow: 2px 5px 8px #9d4040;
+        }
+
+        .container button {
+            width: 26%;
+            margin: 25px 44px;
+            padding: 4px 10px;
+            border-radius: 11px;
+            background-color: bisque;
+
+        }
+
+        .container button:hover {
+            color: #e54e10;
+            background-color: #b6a7a7;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="left">
+            <img src="log.png" alt="">
+            <a> Deepak fitness</a>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">fitness calculater</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1> For Join / Enquairy Fill tha form </h1>
+        <forrm action="noaction.php">
+            <div class="form-group">
+                <input text="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input text="" placeholder="Enter your Age">
+            </div>
+
+            <div class="form-group">
+                <input text="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input text="" placeholder="Enter your Contact No.">
+            </div>
+            <div class="form-group">
+                <input text="" placeholder="Enter your Locality">
+            </div>
+        </forrm>
+        <button class="bts"> submit</button>
+        <button class="bts"> Reset</button>
+    </div>
+</body>
+
+</html>
